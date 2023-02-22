@@ -54,6 +54,7 @@ const About = () => {
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
               <button className="text-gradient btn-link">Contact me</button>
+              <br/>
               <Link to="work" className="text-gradient btn-link cursor-pointer">
                 My Work
               </Link>
