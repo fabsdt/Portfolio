@@ -24,21 +24,21 @@ const About = () => {
           ></motion.div>
           {/* text */}
           <div className="flex-1">
-            <h2 className="h2 text-gradient">About me.</h2>
+            <h2 className="h2 text-gradient1">About me.</h2>
             <h3 className="h3 mb-4">I'm a junior MERN developer</h3>
             <p className="mb-6">
               As a developer, I am a fast learner and have a passion for keeping
-              up with the latest technologies. I am autodidact and able to
-              work independently, but I also value teamwork and i love that, am always
-              willing to collaborate with others. Overall, my drive to learn and
-              grow, coupled with my ability to work well with others, make me a
-              valuable asset to any team.
+              up with the latest technologies. I am autodidact and autonomous,
+              but I also value teamwork and i love that. Overall, my drive to
+              learn and grow, coupled with my ability to work well with others,
+              make me a valuable asset to any team !
             </p>
             {/* stats */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={15} duration={10} /> : null}+
+                <div className="text-[40px] font-tertiary text-gradient1 mb-2">
+                  {inView ? <CountUp start={0} end={15} duration={5} /> : null}
+                  +
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Projects <br />
@@ -53,8 +53,10 @@ const About = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <button className="text-gradient btn-link">Contact me</button>
-              <br/>
+              <Link to="contact" className="text-gradient btn-link cursor-pointer">
+                Contact me
+              </Link>
+              <br />
               <Link to="work" className="text-gradient btn-link cursor-pointer">
                 My Work
               </Link>

@@ -1,7 +1,5 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import styled from 'styled-components';
-import { Link } from 'react-scroll';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
@@ -32,27 +30,56 @@ const Contact = () => {
 
   return (
     <>
-      <div className="section flex justify-center p-5" id="contact">
-        <StyledContactForm>
-          <Link to="contact" className="text-gradient btn-link cursor-pointer">
-            Work with me !
-          </Link>
-          <form ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="user_name" />
-            <label>Email</label>
-            <input type="email" name="user_email" />
-            <label>Message</label>
-            <textarea name="message" />
-            <input
-              type="submit"
-              value="Send"
-              className="bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#f0ebf1] font-bold font-primary hover:from-[#e7e2e7] hover:to-[#42A6E3]"
-            />
-          </form>
-        </StyledContactForm>
-      </div>
-      <div className="py-8 flex-grow justify-center">
+      <section className="py-16 lg:section" id="contact">
+        <div className="container mx-auto">
+          <div className="flex flex-col lg:flex-row">
+            {/* text */}
+            <motion.div 
+            variants={fadeIn('right', 0.3)}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.3 }}
+            className="flex-1 flex justify-start items-center">
+              <div>
+                <h4 className="text-xl uppercase text-gradient1 font-medium mb-2 tracking-wide">
+                  Get in touch
+                </h4>
+                <h2 className="text-[45] lg:text-[90px] leading-none mb-12">
+                  Let's work <br /> together !
+                </h2>
+              </div>
+            </motion.div>
+            <form
+              className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start"
+              ref={form}
+              onSubmit={sendEmail}
+            >
+              <input
+                className="bg-transparent border-b py-3 outline-none w-full placeholder:text-gray-400 focus:border-accent transition-all"
+                type="text"
+                name="user_name"
+                placeholder="Your name"
+              />
+              <input
+                className="bg-transparent border-b py-3 outline-none w-full placeholder:text-gray-400 focus:border-accent transition-all"
+                type="email"
+                name="user_email"
+                placeholder="Your email"
+              />
+              <textarea
+                className="bg-transparent border-b py-12 outline-none w-full placeholder:text-gray-400 focus:border-accent transition-all  resize-none mb-12"
+                name="message"
+                placeholder="Your Message"
+              />
+              <button type="submit" className="btn btn-lg">
+                Send message
+              </button>
+            </form>
+            {/* </StyledContactForm> */}
+          </div>
+        </div>
+      </section>
+      <div className="py-3 flex-grow justify-center">
         <div className="container mx-auto">
           {/* social */}
           <motion.div
@@ -79,53 +106,52 @@ const Contact = () => {
 export default Contact;
 
 // Styles
-const StyledContactForm = styled.div`
-  width: 400px;
-  form {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-    font-size: 16px;
-    input {
-      color: black;
-      width: 100%;
-      height: 35px;
-      padding: 7px;
-      outline: none;
-      border-radius: 5px;
-      border: 1px solid rgb(220, 220, 220);
-      &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
-      }
-    }
-    textarea {
-      color: black;
-      max-width: 100%;
-      min-width: 100%;
-      width: 100%;
-      max-height: 100px;
-      min-height: 100px;
-      padding: 7px;
-      outline: none;
-      border-radius: 5px;
-      border: 1px solid rgb(220, 220, 220);
-      &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
-      }
-    }
-    label {
-      margin-top: 1rem;
-    }
-    input[type='submit'] {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 1.5rem;
-      cursor: pointer;
-      background: #42a6e3;
-      color: white;
-      border: none;
-    }
-  }
-`;
+// const StyledContactForm = styled.div`
+//   width: 400px;
+//   form {
+//     display: flex;
+//     align-items: flex-start;
+//     flex-direction: column;
+//     width: 100%;
+//     font-size: 16px;
+//     input {
+//       color: black;
+//       width: 100%;
+//       height: 35px;
+//       padding: 7px;
+//       outline: none;
+//       border-radius: 5px;
+//       border: 1px solid rgb(220, 220, 220);
+//       &:focus {
+//         border: 2px solid rgba(0, 206, 158, 1);
+//       }
+//     }
+//     textarea {
+//       color: black;
+//       max-width: 100%;
+//       min-width: 100%;
+//       width: 100%;
+//       max-height: 100px;
+//       min-height: 100px;
+//       padding: 7px;
+//       outline: none;
+//       border-radius: 5px;
+//       border: 1px solid rgb(220, 220, 220);
+//       &:focus {
+//         border: 2px solid rgba(0, 206, 158, 1);
+//       }
+//     }
+//     label {
+//       margin-top: 1rem;
+//     }
+//     input[type='submit'] {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       margin-top: 1.5rem;
+//       cursor: pointer;
+//       background: #42a6e3;
+//       color: white;
+//       border: none;
+//     }
+//   }

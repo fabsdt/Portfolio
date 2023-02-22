@@ -12,7 +12,7 @@ import { Link } from 'react-scroll';
 const Banner = () => {
   return (
     <section
-      className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
+      className=" lg:min-h-[78vh] flex items-center"
       id="home"
     >
       <div className="container mx-auto">
@@ -26,7 +26,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="text-[35px] font-bold leading-[0.8] lg:text-[80px]"
             >
-              Polsmart <span>Vai</span>
+              Vamb33g <span></span>
             </motion.h1>
             <br />
             <motion.div
@@ -39,7 +39,7 @@ const Banner = () => {
               <span className="text-white mr-4">I am </span>
               <TypeAnimation
                 sequence={[
-                  'A Junior Developer',
+                  'A Developer',
                   2000,
                   'An Autodidact',
                   2000,
@@ -49,7 +49,7 @@ const Banner = () => {
                   2000,
                 ]}
                 speed={50}
-                className="text-gradient"
+                className="text-gradient1"
                 wrapper="span"
                 repeat={Infinity}
               />
@@ -71,7 +71,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <Link to="work" className="text-gradient btn-link cursor-pointer">
+              <Link to="contact" className="text-gradient btn-link cursor-pointer">
                 Contact me
               </Link>
               <br />
