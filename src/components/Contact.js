@@ -1,6 +1,10 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import styled from "styled-components";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import styled from 'styled-components';
+import { Link } from 'react-scroll';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../variants';
 
 const Contact = () => {
   const form = useRef();
@@ -10,15 +14,15 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_c178629",
-        "template_j66dov6",
+        'service_c178629',
+        'template_j66dov6',
         form.current,
-        "BmfVcsV8ECPI_t35d"
+        'BmfVcsV8ECPI_t35d'
       )
       .then(
         (result) => {
           console.log(result.text);
-          console.log("message sent");
+          console.log('message sent');
         },
         (error) => {
           console.log(error.text);
@@ -27,19 +31,48 @@ const Contact = () => {
   };
 
   return (
-    <div className="section flex justify-center p-5" id="contact">
-    <StyledContactForm>
-      <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Message</label>
-        <textarea name="message" />
-        <input type="submit" value="Send" />
-      </form>
-    </StyledContactForm>
-    </div>
+    <>
+      <div className="section flex justify-center p-5" id="contact">
+        <StyledContactForm>
+          <Link to="contact" className="text-gradient btn-link cursor-pointer">
+            Work with me !
+          </Link>
+          <form ref={form} onSubmit={sendEmail}>
+            <label>Name</label>
+            <input type="text" name="user_name" />
+            <label>Email</label>
+            <input type="email" name="user_email" />
+            <label>Message</label>
+            <textarea name="message" />
+            <input
+              type="submit"
+              value="Send"
+              className="bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#f0ebf1] font-bold font-primary hover:from-[#e7e2e7] hover:to-[#42A6E3]"
+            />
+          </form>
+        </StyledContactForm>
+      </div>
+      <div className="py-8 flex-grow justify-center">
+        <div className="container mx-auto">
+          {/* social */}
+          <motion.div
+            variants={fadeIn('up', 0.7)}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+            className="flex text-[50px] gap-x-6 max-w-max mx-auto lg:mx-0"
+          >
+            {/* <img src={Logo} alt="" /> */}
+            <a href="https://www.linkedin.com/in/vamb33g" target="_blank">
+              <FaLinkedin />
+            </a>
+            <a href="https://github.com/Vai-1337" target="_blank">
+              <FaGithub />
+            </a>
+          </motion.div>
+        </div>
+      </div>
+    </>
   );
 };
 
@@ -55,7 +88,7 @@ const StyledContactForm = styled.div`
     width: 100%;
     font-size: 16px;
     input {
-      color : black;
+      color: black;
       width: 100%;
       height: 35px;
       padding: 7px;
@@ -67,7 +100,7 @@ const StyledContactForm = styled.div`
       }
     }
     textarea {
-      color : black;
+      color: black;
       max-width: 100%;
       min-width: 100%;
       width: 100%;
@@ -84,10 +117,13 @@ const StyledContactForm = styled.div`
     label {
       margin-top: 1rem;
     }
-    input[type="submit"] {
-      margin-top: 2rem;
+    input[type='submit'] {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1.5rem;
       cursor: pointer;
-      background: rgb(249, 105, 14);
+      background: #42a6e3;
       color: white;
       border: none;
     }

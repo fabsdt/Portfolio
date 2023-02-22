@@ -26,7 +26,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="text-[35px] font-bold leading-[0.8] lg:text-[80px]"
             >
-              Fabian <span>Schmidt</span>
+              Polsmart <span>Vai</span>
             </motion.h1>
             <br />
             <motion.div
@@ -39,10 +39,14 @@ const Banner = () => {
               <span className="text-white mr-4">I am </span>
               <TypeAnimation
                 sequence={[
-                  'A Developer',
+                  'A Junior Developer',
                   2000,
                   'An Autodidact',
-                  2000
+                  2000,
+                  'resourceful',
+                  2000,
+                  'team player',
+                  2000,
                 ]}
                 speed={50}
                 className="text-gradient"
@@ -56,7 +60,10 @@ const Banner = () => {
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
-            ></motion.p>
+            >
+              <p>Frontend : React, NextJS</p>
+              <p>Backend : MongoDB, Express, NodeJS </p>
+            </motion.p>
             <motion.div
               variants={fadeIn('up', 0.3)}
               initial="hidden"
@@ -64,7 +71,9 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <button className="text-gradient btn-link">Contact me</button>
+              <Link to="work" className="text-gradient btn-link cursor-pointer">
+                Contact me
+              </Link>
               <br />
               <Link to="work" className="text-gradient btn-link cursor-pointer">
                 My Work
@@ -77,8 +86,7 @@ const Banner = () => {
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
-            >
-            </motion.div>
+            ></motion.div>
           </div>
           <br />
           {/* image */}
@@ -86,7 +94,7 @@ const Banner = () => {
             variants={fadeIn('down', 0.5)}
             initial="hidden"
             whileInView={'show'}
-            className="hidden lg:flex flex-1 max-w-[352px] lg:max-w-[530px]"  
+            className="hidden lg:flex flex-1 max-w-[352px] lg:max-w-[530px]"
           >
             <img src={Image} alt="" />
           </motion.div>
