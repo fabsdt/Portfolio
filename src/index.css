@@ -63,9 +63,34 @@
     @apply text-base;
   }
   .text-gradient {
-    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#dd56ff] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#f0ebf1] font-bold font-primary hover:from-[#e7e2e7] hover:to-[#42A6E3];
   }
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
+}
+
+body {
+  -webkit-animation: gradient 5s ease infinite;
+  animation: gradient 5s ease infinite;
+  background-color: #333c6e;
+  background-image: linear-gradient(43deg,#0a36fd,#020202 50%,#2c51b8);
+  background-size: 160% 110%;
+}
+@keyframes gradient {
+0% {
+  background-position: 0 50%;
+}
+25% {
+  background-position: 40% 30%;
+}
+50% {
+  background-position: 100% 50%;
+}
+75% {
+  background-position: 75% 25%;
+}
+100% {
+  background-position: 0 35%;
+}
 }

@@ -1,19 +1,13 @@
 import React from 'react';
-// images
-import Logo from '../assets/logo.svg';
-//icons
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-// variants
 import { fadeIn } from '../variants';
-//motion
 import { motion } from 'framer-motion';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
-const Header = () => {
+const Contact = () => {
   return (
-    <div className="py-8 flex-grow justify-center">
-      <div className="container mx-auto">
-        {/* social */}
-        <motion.div
+    <div className="section flex justify-center p-5" id="contact">
+     {/* social */}
+     <motion.div
           variants={fadeIn('up', 0.7)}
           initial="hidden"
           whileInView={'show'}
@@ -28,9 +22,8 @@ const Header = () => {
             <FaGithub />
           </a>
         </motion.div>
-      </div>
     </div>
   );
 };
 
-export default Header;
+export default Contact;
