@@ -20,25 +20,26 @@ const About = () => {
           {/* img */}
           <motion.div
             variants={fadeIn('right')}
-            className="flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
+            className="hidden flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
           ></motion.div>
           {/* text */}
           <div className="flex-1">
             <h2 className="h2 text-gradient1">About me.</h2>
             <h3 className="h3 mb-4">I'm a junior MERN developer</h3>
             <p className="mb-6">
-              As a developer, I am a fast learner and have a passion for keeping
-              up with the latest technologies. I am autodidact and autonomous,
-              but I also value teamwork and i love that. Overall, my drive to
-              learn and grow, coupled with my ability to work well with others,
-              make me a valuable asset to any team !
+              I am 40 years old, father of 2 children, I live in France, in the
+              city of Brest, in Brittany. <br /> As a developer, I'm living I am a fast
+              learner and have a passion for keeping up with the latest
+              technologies. I am autodidact and autonomous, but I also value
+              teamwork and i love that. Overall, my drive to learn and grow,
+              coupled with my ability to work well with others, make me a
+              valuable asset to any team !
             </p>
             {/* stats */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
                 <div className="text-[40px] font-tertiary text-gradient1 mb-2">
-                  {inView ? <CountUp start={0} end={15} duration={5} /> : null}
-                  +
+                  {inView ? <CountUp start={0} end={15} duration={5} /> : null}+
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Projects <br />
@@ -53,7 +54,10 @@ const About = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <Link to="contact" className="text-gradient btn-link cursor-pointer">
+              <Link
+                to="contact"
+                className="text-gradient btn-link cursor-pointer"
+              >
                 Contact me
               </Link>
               <br />
