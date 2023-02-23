@@ -26,6 +26,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="text-[35px] font-bold leading-[0.8] lg:text-[80px]"
             >
+            <br />
               Vamb33g <span></span>
             </motion.h1>
             <br />
