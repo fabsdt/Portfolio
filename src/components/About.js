@@ -43,7 +43,7 @@ const About = () => {
             {/* stats */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
-                <div className="text-[40px] font-tertiary text-gradient1 mb-2">
+                <div className="text-[40px] font-tertiary text-gradient1 mb-2 p-3">
                   {inView ? <CountUp start={0} end={15} duration={5} /> : null}+
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
