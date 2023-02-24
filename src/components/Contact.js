@@ -39,10 +39,10 @@ const Contact = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex justify-start items-center">
+            className="flex-1 flex justify-center items-center">
               <div>
-                <h4 className="text-xl uppercase text-gradient1 font-medium mb-2 tracking-wide">
-                Let's work <br /> together !
+                <h4 className="text-[45] lg:text-[90px] leading-none uppercase text-gradient1 flex font-medium mb-2 tracking-wide p-6">
+                Let's work !
                 </h4>
               </div>
             </motion.div>

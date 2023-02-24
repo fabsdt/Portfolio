@@ -67,7 +67,7 @@ const About = () => {
               </Link>
               <br />
               <Link to="work" className="text-gradient btn-link cursor-pointer">
-                My Work
+                My Projects
               </Link>
             </motion.div>
           </div>
