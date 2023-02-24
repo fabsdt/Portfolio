@@ -32,7 +32,7 @@ const Contact = () => {
     <>
       <section className="py-16 lg:section" id="contact">
         <div className="container mx-auto">
-          <div className="flex flex-col lg:flex-row">
+          <div className="flex flex-col lg:flex-row justify-center">
             {/* text */}
             <motion.div 
             variants={fadeIn('right', 0.3)}
@@ -47,7 +47,7 @@ const Contact = () => {
               </div>
             </motion.div>
             <form
-              className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start"
+              className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-center"
               ref={form}
               onSubmit={sendEmail}
             >
