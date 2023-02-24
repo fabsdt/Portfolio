@@ -46,7 +46,7 @@ const Work = () => {
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
                 <span className="text-3xl text-gradient cursor-pointer">
                   <a href="https://analyatech.fr/" target="_blank">
-                    Ecommerce website
+                  ChatBot Application 
                   </a>
                 </span>
               </div>
@@ -74,7 +74,7 @@ const Work = () => {
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
                 <span className="text-3xl text-gradient cursor-pointer">
                   <a href="https://vamb33gcs-chatbot.vercel.app/" target="_blank">
-                    ChatBot Application 
+                  Ecommerce website
                   </a>
                 </span>
               </div>
