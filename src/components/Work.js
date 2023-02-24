@@ -31,6 +31,7 @@ const Work = () => {
               </p>
               <button className="btn btn-sm">View all projects</button>
             </div>
+            </motion.div>
             {/* images */}
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               {/* overlay */}
@@ -51,8 +52,8 @@ const Work = () => {
                 </span>
               </div>
             </div>
-          </motion.div>
-          <motion.div
+          
+          <div
             variants={fadeIn('down', 0.3)}
             initial="hidden"
             whileInView={'show'}
@@ -98,7 +99,7 @@ const Work = () => {
                 </span>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
