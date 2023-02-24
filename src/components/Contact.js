@@ -42,11 +42,8 @@ const Contact = () => {
             className="flex-1 flex justify-start items-center">
               <div>
                 <h4 className="text-xl uppercase text-gradient1 font-medium mb-2 tracking-wide">
-                  Get in touch
+                Let's work <br /> together !
                 </h4>
-                <h2 className="text-[45] lg:text-[90px] leading-none mb-12">
-                  Let's work <br /> together !
-                </h2>
               </div>
             </motion.div>
             <form
