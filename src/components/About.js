@@ -37,7 +37,7 @@ const About = () => {
               learner and have a passion for keeping up with the latest
               technologies. I am autodidact and autonomous, but I also value
               teamwork and i love that. Overall, my drive to learn and grow,
-              coupled with my ability to work well with others, make me a
+              coupled with my ability to work with others, make me a
               valuable asset to any team !
             </p>
             {/* stats */}

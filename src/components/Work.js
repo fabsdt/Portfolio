@@ -14,7 +14,7 @@ const Work = () => {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-10">
           <motion.div
-            variants={fadeIn('left', 0.3)}
+            variants={fadeIn('down', 0.3)}
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0 }}
@@ -27,7 +27,7 @@ const Work = () => {
                 I started with intermediate-level and advanced projects that use
                 different technologies such as React, Next.js, Node.js,
                 Express.js, and MongoDB... I also integrated advanced features
-                such as services like Stripe, Paypal for online payments. !
+                such as services like Stripe, Paypal for online payments !
               </p>
               <button className="btn btn-sm">View all projects</button>
             </div>
