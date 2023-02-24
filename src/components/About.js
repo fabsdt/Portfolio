@@ -44,7 +44,7 @@ const About = () => {
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
                 <div className="text-[40px] font-tertiary text-gradient1 mb-2 p-3">
-                  {inView ? <CountUp start={0} end={15} duration={5} /> : null}+
+                  {inView ? <CountUp start={0} end={15} duration={4} /> : null}+
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Projects <br />
