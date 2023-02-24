@@ -38,7 +38,7 @@ const Work = () => {
               {/* image */}
               <img
                 className="group-hover:scale-125  transition-all duration-500"
-                src={Img1}
+                src={Img2}
                 alt=""
               />
               {/* project title */}
@@ -66,7 +66,7 @@ const Work = () => {
               {/* image */}
               <img
                 className="group-hover:scale-125  transition-all duration-500"
-                src={Img2}
+                src={Img1}
                 alt=""
               />
               {/* project title */}

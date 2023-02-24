@@ -41,7 +41,7 @@ const Banner = () => {
               <TypeAnimation
                 sequence={[
                   'A Developer',
-                  2000,
+                  3000,
                   'An Autodidact',
                   2000,
                   'resourceful',
