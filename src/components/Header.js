@@ -12,7 +12,7 @@ const Header = () => {
       <div className="container mx-auto ">
         {/* social */}
         <motion.div
-          variants={fadeIn('up', 0.7)}
+          variants={fadeIn('right', 0.7)}
           initial="hidden"
           whileInView={'show'}
           viewport={{ once: false, amount: 0.7 }}

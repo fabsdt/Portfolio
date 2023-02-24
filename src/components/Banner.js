@@ -20,7 +20,7 @@ const Banner = () => {
           {/* text */}
           <div className="flex-1 text-center font-secondary lg:text-left">
             <motion.h1
-              variants={fadeIn('up', 0.3)}
+              variants={fadeIn('down', 0.3)}
               initial="hidden"
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
@@ -30,8 +30,9 @@ const Banner = () => {
               Vamb33g <span></span>
             </motion.h1>
             <br />
+            <br />
             <motion.div
-              variants={fadeIn('up', 0.3)}
+              variants={fadeIn('down', 0.3)}
               initial="hidden"
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
@@ -56,7 +57,7 @@ const Banner = () => {
               />
             </motion.div>
             <motion.p
-              variants={fadeIn('up', 0.5)}
+              variants={fadeIn('down', 0.5)}
               initial="hidden"
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
@@ -66,7 +67,7 @@ const Banner = () => {
               <p>Backend : MongoDB, Express, NodeJS </p>
             </motion.p>
             <motion.div
-              variants={fadeIn('up', 0.3)}
+              variants={fadeIn('down', 0.3)}
               initial="hidden"
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
