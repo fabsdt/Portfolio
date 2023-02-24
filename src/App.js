@@ -16,7 +16,7 @@ const App = () => {
       <About />
       <Work />
       <Contact />
-      <div className='h-[200px]'></div>
+      <div className='h-[100px]'></div>
     </div>
   );
 };
