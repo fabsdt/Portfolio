@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 // images
 import Img1 from '../assets/portfolio-img1.png';
+import Img2 from '../assets/portfolio-img2.png';
 
 import React from 'react';
 
@@ -65,7 +66,7 @@ const Work = () => {
               {/* image */}
               <img
                 className="group-hover:scale-125  transition-all duration-500"
-                src={Img1}
+                src={Img2}
                 alt=""
               />
               {/* project title */}
