@@ -24,8 +24,8 @@ const Work = () => {
             <div>
               <h2 className="h2 leading-tight text-gradient">My projects.</h2>
               <p className="max-w-sm mb-16">
-                I started with intermediate-level and advanced projects that use
-                different technologies such as React, Next.js, Node.js,
+                I started with intermediate-level and then advanced projects that use
+                different technologies such as React, Redux, Next.js, Vite, Node.js,
                 Express.js, and MongoDB... I also integrated advanced features
                 such as services like Stripe, Paypal for online payments !
               </p>
