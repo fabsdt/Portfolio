@@ -13,7 +13,7 @@ const Work = () => {
     <section className="section" id="work">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-10">
-          <motion.div
+          <div
             variants={fadeIn('down', 0.3)}
             initial="hidden"
             whileInView={'show'}
@@ -31,7 +31,6 @@ const Work = () => {
               </p>
               <button className="btn btn-sm">View all projects</button>
             </div>
-            </motion.div>
             {/* images */}
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               {/* overlay */}
@@ -52,7 +51,7 @@ const Work = () => {
                 </span>
               </div>
             </div>
-          
+          </div>
           <div
             variants={fadeIn('down', 0.3)}
             initial="hidden"
