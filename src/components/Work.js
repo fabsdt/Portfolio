@@ -5,6 +5,7 @@ import { fadeIn } from '../variants';
 // images
 import Img1 from '../assets/portfolio-img1.png';
 import Img2 from '../assets/portfolio-img2.png';
+import Img3 from '../assets/portfolio-img3.png';
 
 import React from 'react';
 
@@ -85,15 +86,15 @@ const Work = () => {
               {/* image */}
               <img
                 className="group-hover:scale-125  transition-all duration-500"
-                src={Img1}
+                src={Img3}
                 alt=""
               />
               {/* project title */}
 
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
                 <span className="text-3xl text-gradient cursor-pointer">
-                  <a href="https://analyatech.fr/" target="_blank">
-                    Ecommerce website
+                  <a href="https://fb-clone-o5qx.vercel.app/" target="_blank">
+                    FB-Clone
                   </a>
                 </span>
               </div>
