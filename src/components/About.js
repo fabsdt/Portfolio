@@ -31,9 +31,7 @@ const About = () => {
           <div className="flex-1">
             <h2 className="h2 text-gradient1">About me.</h2>
             <h3 className="h3 mb-4">I'm a junior MERN developer</h3>
-            <p className="mb-6">
-              I live in France, in the
-              city of Brest, in Brittany. <br /> As a developer, I am a fast
+            <p className="mb-6"><br /> As a developer, I am a fast
               learner and have a passion for keeping up with the latest
               technologies. I am autodidact and autonomous, but I also value
               teamwork and i love that. Overall, my drive to learn and grow,

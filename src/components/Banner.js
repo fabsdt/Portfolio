@@ -27,7 +27,7 @@ const Banner = () => {
               className="text-[35px] font-bold leading-[0.8] lg:text-[80px]"
             >
             <br />
-              Vamb33g <span></span>
+              Fabian Schmidt <span></span>
             </motion.h1>
             
             <br />
@@ -42,7 +42,7 @@ const Banner = () => {
               <span className="text-white mr-4">I am </span>
               <TypeAnimation
                 sequence={[
-                  'A Developer',
+                  'A Web Developer',
                   3000,
                   'An Autodidact',
                   2000,
@@ -64,8 +64,8 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              <p>Frontend : React, NextJS</p>
-              <p>Backend : MongoDB, Express, NodeJS </p>
+              <p>Frontend : React</p>
+              <p>Backend : NodeJS </p>
             </motion.p>
             <motion.div
               variants={fadeIn('down', 0.3)}
@@ -93,14 +93,14 @@ const Banner = () => {
           </div>
           <br />
           {/* image */}
-          <motion.div
+          {/* <motion.div
             variants={fadeIn('down', 0.5)}
             initial="hidden"
             whileInView={'show'}
             className="hidden lg:flex flex-auto max-w-[352px] lg:max-w-[530px]"
           >
             <img src={Image} alt="" />
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>
