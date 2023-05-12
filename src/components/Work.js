@@ -99,6 +99,8 @@ const Work = () => {
               </div>
             </div>
             {/* overlay */}
+            
+            {/* 
             {showButton && ( <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               
               <div className="group-hover:bg-black/70 w-full h-full z-40 absolute"></div>
@@ -118,6 +120,9 @@ const Work = () => {
                 </span>
               </div>
             </div> )}
+
+            */}
+            
             {showButton && ( <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               
               <div className="group-hover:bg-black/70 w-full h-full z-40 absolute"></div>
