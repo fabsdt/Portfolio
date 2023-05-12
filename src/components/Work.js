@@ -7,6 +7,7 @@ import { fadeIn } from "../variants";
 import Img1 from "../assets/portfolio-img1.png";
 import Img2 from "../assets/portfolio-img2.png";
 import Img3 from "../assets/portfolio-img3.png";
+import Img4 from "../assets/portfolio-img4.png";
 
 import React from "react";
 
@@ -41,7 +42,9 @@ const Work = () => {
             </div>
 
             {/* images */}
-            {showButton && ( <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+            {showButton && ( 
+              <>
+              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
              
               <div className="group-hover:bg-black/70 w-full h-full z-40 absolute"></div>
              
@@ -61,7 +64,11 @@ const Work = () => {
                   </a>
                 </span>
               </div>
-            </div> )}
+            </div> 
+
+            
+            </>
+            )}
 
           </div>
           <div
@@ -111,6 +118,27 @@ const Work = () => {
                 </span>
               </div>
             </div> )}
+            {showButton && ( <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+              
+              <div className="group-hover:bg-black/70 w-full h-full z-40 absolute"></div>
+              
+              <img
+                className="group-hover:scale-125  transition-all duration-500"
+                src={Img4}
+                alt=""
+              />
+              
+
+              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                <span className="text-3xl text-gradient cursor-pointer">
+                  <a href="https://netflix-clone-eight-umber.vercel.app/" target="_blank">
+                    Netflix-Clone
+                  </a>
+                </span>
+              </div>
+            </div> )}
+
+            
 
           </div>
         </div>
