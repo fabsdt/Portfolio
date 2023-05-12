@@ -93,8 +93,12 @@ const Work = () => {
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
                 <span className="text-3xl text-gradient cursor-pointer">
                   <a href="https://analyatech.fr/" target="_blank">
-                    Ecommerce website
+                    Ecommerce website 
+                    <br />
+                    <p>nextjs / redux / nodejs / mongodb</p>
+
                   </a>
+                  
                 </span>
               </div>
             </div>
@@ -143,9 +147,10 @@ const Work = () => {
               </div>
             </div> )}
 
-            
-
+            <div className="text-3xl italic text-gradient">
+            more on my github</div>
           </div>
+         
         </div>
       </div>
     </section>

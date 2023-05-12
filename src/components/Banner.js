@@ -60,7 +60,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              <p>Frontend : React</p>
+              <p>Frontend : React (redux, typescript)</p>
               <p>Backend : NodeJS </p>
             </motion.p>
             <motion.div
