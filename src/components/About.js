@@ -31,12 +31,11 @@ const About = () => {
           <div className="flex-1">
             <h2 className="h2 text-gradient1">About me.</h2>
             <h3 className="h3 mb-4">I'm a fullstack web developer</h3>
-            <p className="mb-6"><br /> As a developer, I am a fast
+            <p className="mb-6"><br /> I am a fast
               learner and have a passion for keeping up with the latest
-              technologies. I am autodidact and autonomous, but I also value
-              teamwork and i love that. Overall, my drive to learn and grow,
-              coupled with my ability to work with others, make me a
-              valuable asset to any team !
+              technologies. 
+              <br />
+              I am autodidact and autonomous. 
             </p>
             {/* stats */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
