@@ -61,6 +61,7 @@ const Work = () => {
                     target="_blank"
                   >
                     ChatBot Application
+                    <p className="text-lg text-gradient cursor-pointer">React / Vite / tailwindcss</p>
                   </a>
                 </span>
               </div>
@@ -93,9 +94,8 @@ const Work = () => {
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
                 <span className="text-3xl text-gradient cursor-pointer">
                   <a href="https://analyatech.fr/" target="_blank">
-                    Ecommerce website 
-                    <br />
-                    <p>nextjs / redux / nodejs / mongodb</p>
+                    Ecommern 
+                    <p className="text-lg text-gradient cursor-pointer">nextjs / redux / nodejs / mongodb / tailwindcss</p>
 
                   </a>
                   
@@ -142,6 +142,7 @@ const Work = () => {
                 <span className="text-3xl text-gradient cursor-pointer">
                   <a href="https://netflix-clone-eight-umber.vercel.app/" target="_blank">
                     Netflix-Clone
+                    <p className="text-lg text-gradient cursor-pointer">nextjs / prisma / mongodb / tailwindcss</p>
                   </a>
                 </span>
               </div>
