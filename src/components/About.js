@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 // countup
-import CountUp from 'react-countup';
+import CountUp from "react-countup";
 // intersection abserver
-import { useInView } from 'react-intersection-observer';
+import { useInView } from "react-intersection-observer";
 // motion
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 // variants
-import { fadeIn } from '../variants';
-import { Link } from 'react-scroll';
-import about from '../assets/vamb33g1.png';
+import { fadeIn } from "../variants";
+import { Link } from "react-scroll";
+import about from "../assets/vamb33g1.png";
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -20,22 +20,26 @@ const About = () => {
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-x20 lg:gap-y-0 h-screen">
           {/* img */}
           <motion.div
-            variants={fadeIn('right')}
+            variants={fadeIn("right")}
             initial="hidden"
-            whileInView={'show'}
+            whileInView={"show"}
             className="hidden lg:flex flex-1 max-w-[352px] lg:max-w-[530px]"
           >
             <img src={about} alt="" />
           </motion.div>
           {/* text */}
           <div className="flex-1">
-            <h2 className="h2 text-gradient1">About me.</h2>
-            <h3 className="h3 mb-4">I'm a fullstack web developer</h3>
-            <p className="mb-6"><br /> I am a fast
-              learner and have a passion for keeping up with the latest
-              technologies. 
-              <br />
-              I am autodidact and autonomous. 
+            <h2 className="h2 text-gradient1">About me.</h2>            
+            <p className="mb-6">
+              <br /> As a developer, I am passionate about continuous learning
+              and strive to improve my technical skills. I am open to challenges
+              and committed to finding effective solutions. 
+             
+              I am also aware of
+              the importance of collaboration and communication in working
+              effectively as a team. I always seek to enhance myself and acquire
+              new skills to deliver quality solutions.
+              I am autodidact and autonomous.
             </p>
             {/* stats */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
@@ -50,11 +54,11 @@ const About = () => {
               </div>
             </div>
             <motion.div
-              variants={fadeIn('up', 0.3)}
+              variants={fadeIn("up", 0.3)}
               initial="hidden"
-              whileInView={'show'}
+              whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
+              className="flex max-w-max gap-x-6 items-center mb-6 mx-auto lg:mx-0"
             >
               <Link
                 to="contact"
@@ -63,9 +67,6 @@ const About = () => {
                 Contact me
               </Link>
               <br />
-              {/* <Link to="work" className="text-gradient btn-link cursor-pointer">
-                My Projects
-              </Link> */}
             </motion.div>
           </div>
         </div>
